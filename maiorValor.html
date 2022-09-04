@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2> informe dois números. Então escreva em tela o maior deles - exercicio 1.</h2>
+    <script>
+         let num1 = prompt("olá usúario, informe o primeiro valor: ");
+        let num2 = prompt("olá usúario, informe segundo valor: ");
+
+        if(num1>num2){
+            document.write("O primeiro valor informado é o maior: "+num1+ " é maior que " + num2);
+        }else if(num2>num1){
+            document.write("\n O segundo valor informado é o maior: "+num2+ " é maior que " + num1);
+        }else{
+            document.write("\n os valores são iguas");
+        }
+    </script>
+</body>
+</html>

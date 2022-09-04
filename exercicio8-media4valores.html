@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>valores menores que 72</title>
+    <style>
+        *{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>media 4 valores entre 0 e 10 - exercicio 08</h2>
+    <script>
+        let soma = 0;
+        let mediaValores = 0;
+        let media;
+        let num1 = parseFloat(prompt("Digite o primeiro valor"));
+        let num2 = parseFloat(prompt("Digite o sedundo valor"));
+        let num3 = parseFloat(prompt("Digite o terceiro valor"));
+        let num4 = parseFloat(prompt("Digite o quarto valor"));
+       
+
+        if(num1<10 && num1>0){
+            soma += num1;
+            mediaValores ++;
+        }
+        if(num2<10 && num2>0){
+            soma += num2;
+            mediaValores ++;
+        }
+        if(num3<10 && num3>0){
+            soma += num3;
+            mediaValores ++;
+        }
+        if(num4<10 && num4>0){
+            soma += num4;
+            mediaValores ++;
+        }
+        media = soma / mediaValores;
+
+        if(media>5){
+            document.write("Você passou no teste, com media de: " + media);
+        }else{
+            document.write("Tente novamente, sua media foi de: " + media);
+        }
+        
+    </script>
+</body>
+</html>

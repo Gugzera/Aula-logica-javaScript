@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>valores menores que 72</title>
+    <style>
+        *{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Seis valores. soma menores que 72 - exercicio 07</h2>
+    <script>
+        let soma = 0;
+        let num1 = parseFloat(prompt("Digite o primeiro valor"));
+        let num2 = parseFloat(prompt("Digite o sedundo valor"));
+        let num3 = parseFloat(prompt("Digite o terceiro valor"));
+        let num4 = parseFloat(prompt("Digite o quarto valor"));
+        let num5 = parseFloat(prompt("Digite o quinto valor"));
+        let num6 = parseFloat(prompt("Digite o sexto valor"));
+        
+
+        if(num1<72){
+            soma += num1;
+        }
+        if(num2<72){
+            soma += num2;
+        }
+        if(num3<72){
+            soma += num3;
+        }
+        if(num4<72){
+            soma += num4;
+        }
+        if(num5<72){
+            soma += num5;
+        }
+        if(num6<72){
+            soma += num6;
+        }
+
+        document.write("A soma desses valores é: " + soma);
+        document.write("<br /> Os valores informados foram: " + num+ " - " +num2+ " - " +num3+ " - " +num4+ " - " +num5+ " - " +num6)
+        
+    </script>
+</body>
+</html>
